@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Empréstimos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Empréstimo Recebido:</h1>
+        <form id="loan-form">
+            <label for="amount">Valor Recebido:</label>
+            <input type="number" id="amount" step="0.01" required>
+            <label for="date">Data do Pagamento:</label>
+            <input type="date" id="date" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <h2>Total Recebido: R$ <span id="total">0.00</span></h2>
+        <ul id="amount-list"></ul>
+        <button id="reset-button">Zerar Pagamentos</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
